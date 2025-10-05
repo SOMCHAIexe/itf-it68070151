@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <p>68070151</p>
+        <h2>ITF Financial</h2>
+        <p>Week 14</p>
+    </nav>
+    <textarea id="log" rows="6" cols="40" readonly></textarea>
+
+    <div class="container">
+        <div class="box">
+            <h1 class="abril">Account Overview🤵</h1>
+            <p>Name: Methawin Chortchuang</p>
+            <p>Type: Saving Acoount</p>
+        </div>
+        <div class="box">
+            <h1 class="abril">Balance Information🪙</h1>
+            <div class="row">
+                <p>Current account balance:</p>
+                <input placeholder="Enter your current balance" type="number" id="current_balance">
+            </div>
+            <div class="row">
+                <p>Current cash:</p>
+                <input placeholder="Enter your current cash" type="number" id="current_cash">
+            </div>
+        <button onclick="changecurrent()">
+            <span class="button_top"> Change </span>
+        </button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <h1 class="abril">Bank Operation💼</h1>
+            <div class="row">
+                <p>Choose your operation</p>
+                <select id="operation">
+                    <option value="deposit">Deposit</option>
+                    <option value="withdraw">Withdraw</option>
+                </select>
+                <input type="number" placeholder="amount" id="amount">
+            </div>
+            <button onclick="proceed()">
+                <span class="button_top"> Proceed </span>
+            </button>
+        </div>
+        <div class="box">
+            <h1 class="abril">Financial Tool💳</h1>
+            <h3>Currency Converter</h3>
+            <input type="number" id="inputAmount" placeholder="Enter amount"><br>
+            <select id="inputCurrency">
+                <option value="USD">USD</option>
+                <option value="THB">THB</option>
+            </select><br>
+            <button onclick="convertCurrency()">
+                <span class="button_top"> Convert </span>
+            </button>
+            <p><strong>Output:</strong> <span id="output">0</span></p>
+        </div>
+    </div>
+    <div class="container">
+        <img src="banknote.png" alt="bank">
+        <img src="https://t4.ftcdn.net/jpg/00/61/06/27/240_F_61062796_NF87GPnWV0fQ2LhoYNlyjev0PocRwZj9.jpg" alt="bank1">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

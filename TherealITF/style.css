@@ -1,0 +1,103 @@
+body {
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0px; 
+    background-color: black;
+}
+
+#log { 
+    border: 1px solid #aaa; 
+    border-radius: 5px;
+    width: 56%;
+    height: 200px; 
+    margin-top: 10px;
+    overflow-y: auto;
+    text-align: left;
+    padding: 10px;
+    white-space: pre-line;
+    resize: none;
+    background-color: black;
+    color: greenyellow;
+    font-size: xx-large;
+}
+
+nav {
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    border: 2px solid #b7b7b7;
+    border-radius: 20px;
+    padding: 20px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0 0 10px #949494;
+    background-color: rgb(44, 44, 44);
+}
+
+input { 
+    margin: 5px;
+    padding: 5px;
+    width: 50%;
+}
+
+.container {
+    display: flex;         /* enable horizontal layout */
+    justify-content: center; /* center the boxes horizontally */
+    gap: 20px;             /* space between boxes */
+    margin: 20px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;           /* space between text and input */
+}
+
+.abril {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* From Uiverse.io by Voxybuns */ 
+button {
+  /* Variables */
+  --button_radius: 0.75em;
+  --button_color: rgb(44, 44, 44);
+  --button_outline_color: #ffffff;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--button_radius);
+  background: var(--button_outline_color);
+}
+
+.button_top {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+
+button:hover .button_top {
+  /* Pull the button upwards when hovered */
+  transform: translateY(-0.33em);
+}
+
+button:active .button_top {
+  /* Push the button downwards when pressed */
+  transform: translateY(0);
+}
+
