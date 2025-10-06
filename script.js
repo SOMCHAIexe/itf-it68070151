@@ -20,7 +20,7 @@ function proceed() {
     }
     else if (type === "withdraw") {
         if (Number(amount.value) > Number(current_balance.value)) {
-            addLog(`Insufficient Balnce`)
+            addLog(`Insufficient Account Balance`)
         }
         else {
             current_balance.value = Number(current_balance.value) - Number(amount.value);
